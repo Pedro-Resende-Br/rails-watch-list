@@ -2,18 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.banner-image {
+.banner-image-list {
   background-image: asset-url('movie_theather.webp');
 }
 
 .list{
-  //display: flex;
+  position: relative;
   padding: 5px;
+
+  .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 .list-card {
   border-radius: 2px;
-  height: 80px;
-  width: 150px;
+  height: 125px;
   background-position: 50% 50%; 
   background-size: cover;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 20% 0px;
+  filter: grayscale(100%);
+}
+
+.list-card:hover{
+  opacity:0.5;
+  color: black;
+} 
+
+a{
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover{
+  color: black;
 }

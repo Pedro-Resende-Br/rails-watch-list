@@ -1,15 +1,24 @@
 <!--<div class="navebar">NAVEBAR</div>-->
-<div class="banner banner-image">
+<div class="banner banner-image-list">
   <h2 class="banner-text">Save any kind of movie</h2>
 </div>
 
 <div class="container">
   <div class="list">
     <h3>My List</h3>
-    <% @list.each do |l|%>
-      <div class="list-card" style="background-image: url('https://source.unsplash.com/random');"><%= l.name %></div>
-    <% end%>
-    <div class="btn btn-success">Create new list</div>
+    <div class="cards row">
+      <% @list.each do |l|%>
+      <div class="col-4">
+        <%=link_to list_path(l.id) do%>
+          <div class="list-card" style="background-image: url('https://source.unsplash.com/random');">
+            <%= l.name%>
+        </div>
+        <% end%>
+      </div>
+      <% end%>
+    </div>
+    <div class="btn btn-success">
+      Create new list
+    </div>
   </div>
-
 </div>
