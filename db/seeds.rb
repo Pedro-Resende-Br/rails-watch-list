@@ -29,8 +29,3 @@ url = "http://tmdb.lewagon.com/movie/top_rated"
   end
 end
 puts "Movies created"
-
-    © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Se
